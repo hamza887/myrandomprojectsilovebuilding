@@ -46,44 +46,51 @@
 //    generatstuff();
 
 
-    const person={
-        firstname: '',
-        lastname: "",
-    }
-    person.firstname='hamza'
-    person.lastname='zaka'
-    person['pets']='zozo'
-    
-    console.log(person.pets)
 
-    const pethave=(petname)=>{
-        if(petname.length===true){
-            console.log(petname.split(' '))
-        }else{
-            console.log('i dont')
-        }
-    }
-    pethave(34)
+    // const user={
+    //    fullname:"jjames shdfd",
+    //    favfood: 'rice pudding',
+    //    sayname: function(){
+    //        console.log(`my name is ${this.fullname}`)
+    //    },
+    //    sayhello: function(){
+    //        console.log(
+    //            `hi my name is ${this.fullname} and my ${this.favfood}`
+    //        )
+    //    }
+    // }
+    // user.sayname();
+    // user.sayhello();
 
-    const car={
-        make:"honda",
-        year: 1997,
-        color: 'red',
-        drive: ()=>{
-            console.log('vroom vroom')
-        },
+    //   const test={
+    //       prop:42,
+    //       fun : function(){
+    //           return this.prop;
+    //       }
+    //   }
 
-        gears: ['reverse', 'netrual','1','2'],
-        engine:{
-            horsepower: 12,
-            fast: true
-        },
-        gps: (location)=>{
-           console.log(`Beep Beep , driving to ${location}`)
-        }
-    }
+    //   console.log(test.fun());
 
+      const user={
+          userName: 'hamza ',
+          passWord: 'hamza123',
+          isSignedIn: false,
+          signIn: function(pwd){
+              if(pwd===this.passWord){
+                  this.isSignedIn=true;
+                  this.greetUser();
+              }
+          },
+          SignOut: function(){
+              this.isSignedIn=false
+          },
+          greetUser: function(){
+              console.log(
+              `Welcome back ${this.userName}`
+              )
+          }
 
-    car.drive();
-    console.log(car.color);
-    car.gps('north')
+      }
+
+      user.signIn('hamza123');
+      user.SignOut();
