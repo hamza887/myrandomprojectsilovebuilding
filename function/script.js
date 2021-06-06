@@ -95,17 +95,45 @@
     //   user.signIn('hamza123');
     //   user.SignOut();
 
-      const newuser={
-          username: "hamza",
-          password: "hamza123",
+    //   const newuser={
+    //       username: "hamza",
+    //       password: "hamza123",
          
-          login: function(pwd){
-             if(typeof(this.pwd)!=="string"){
-                return console.log(`hi welcome back ${pwd}`);
-             }else {
-                  return console.log('this is not string')
-             }
-          }
-      }
-      newuser.login('helefjl');
+    //       login: function(pwd){
+    //          if(typeof(this.pwd)!=="string"){
+    //             return console.log(`hi welcome back ${pwd}`);
+    //          }else {
+    //               return console.log('this is not string')
+    //          }
+    //       }
+    //   }
+    //   newuser.login('helefjl');
 
+    //   const sum=(a,b)=>{
+    //          return a+b;
+    //   }
+
+    //   sum(2,4);
+
+    //   const add=(sum,c,d)=>{
+    //       console.log(sum+c+d);
+    //   }
+
+    //   add(sum+2+2);
+
+
+    // const words=[
+    //     'challendges',
+    //     'make',
+    //     'yesr',
+    //     'about ',
+    //     'hello'
+    // ]
+    // const print=(elements)=>{
+    //     console.log(elements);
+    // }
+   
+    // words.forEach(print);
+
+    
+       
