@@ -46,11 +46,44 @@
 //    generatstuff();
 
 
-const checkinput=(input)=>{
-    if(input.length>10){
-        console.log("hello i think this is greater then 10");
-    }else{
-        console.log("you are certainly getting an error");
+    const person={
+        firstname: '',
+        lastname: "",
     }
-}
-   checkinput('helliidhsiddf')
+    person.firstname='hamza'
+    person.lastname='zaka'
+    person['pets']='zozo'
+    
+    console.log(person.pets)
+
+    const pethave=(petname)=>{
+        if(petname.length===true){
+            console.log(petname.split(' '))
+        }else{
+            console.log('i dont')
+        }
+    }
+    pethave(34)
+
+    const car={
+        make:"honda",
+        year: 1997,
+        color: 'red',
+        drive: ()=>{
+            console.log('vroom vroom')
+        },
+
+        gears: ['reverse', 'netrual','1','2'],
+        engine:{
+            horsepower: 12,
+            fast: true
+        },
+        gps: (location)=>{
+           console.log(`Beep Beep , driving to ${location}`)
+        }
+    }
+
+
+    car.drive();
+    console.log(car.color);
+    car.gps('north')
