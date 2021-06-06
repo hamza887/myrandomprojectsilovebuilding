@@ -71,26 +71,40 @@
 
     //   console.log(test.fun());
 
-      const user={
-          userName: 'hamza ',
-          passWord: 'hamza123',
-          isSignedIn: false,
-          signIn: function(pwd){
-              if(pwd===this.passWord){
-                  this.isSignedIn=true;
-                  this.greetUser();
-              }
-          },
-          SignOut: function(){
-              this.isSignedIn=false
-          },
-          greetUser: function(){
-              console.log(
-              `Welcome back ${this.userName}`
-              )
+    //   const user={
+    //       userName: 'hamza ',
+    //       passWord: 'hamza123',
+    //       isSignedIn: false,
+    //       signIn: function(pwd){
+    //           if(pwd===this.passWord){
+    //               this.isSignedIn=true;
+    //               this.greetUser();
+    //           }
+    //       },
+    //       SignOut: function(){
+    //           this.isSignedIn=false
+    //       },
+    //       greetUser: function(){
+    //           console.log(
+    //           `Welcome back ${this.userName}`
+    //           )
+    //       }
+
+    //   }
+
+    //   user.signIn('hamza123');
+    //   user.SignOut();
+
+      const newuser={
+          username: "hamza",
+          password: "hamza123",
+          welcome: `Hi welcome back ${this.username}`,
+          login: function(pwd){
+             if(typeof(this.password || this.username)==="string"){
+                return console.log(this.welcome);
+             }else {
+                  return console.log('this is not string')
+             }
           }
-
       }
-
-      user.signIn('hamza123');
-      user.SignOut();
+      newuser.login('hamza');
