@@ -98,13 +98,14 @@
       const newuser={
           username: "hamza",
           password: "hamza123",
-          welcome: `Hi welcome back ${this.username}`,
+         
           login: function(pwd){
-             if(typeof(this.password || this.username)==="string"){
-                return console.log(this.welcome);
+             if(typeof(this.pwd)!=="string"){
+                return console.log(`hi welcome back ${pwd}`);
              }else {
                   return console.log('this is not string')
              }
           }
       }
-      newuser.login('hamza');
+      newuser.login('helefjl');
+
